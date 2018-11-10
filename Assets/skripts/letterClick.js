@@ -1,4 +1,8 @@
 #pragma strict
+
+
+
+
 function Start () {
 }
 
@@ -7,6 +11,10 @@ function Update () {
 }
 
 function OnMouseDown() {
+
+
+	generateLetter.redu = generateLetter.redu -1;
+	
 	//das andere Skript beschaffen
 	var otherScript : generateLetter = GameObject.Find("Quest").GetComponent(generateLetter);
 	if (otherScript == null) {

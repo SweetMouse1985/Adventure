@@ -15,8 +15,8 @@ var myY : int = 300;
 var myBox : GUIStyle;
 
 function Start () {
-	myMessage = "Räumen Sie das Hindernis aus dem Weg.\nSuchen Sie im Wald nach Buchstaben.\n"+
-				"Lösen Sie damit nach dem Labyrinth das Rätsel.";
+	myMessage = "Clear your way.\nSearch for letters in the forest.\n"+
+				"Solve the puzzle after the maze with the letters.";
 }
 
 function Update () {

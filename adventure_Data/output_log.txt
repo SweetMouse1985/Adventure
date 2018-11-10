@@ -1,0 +1,22 @@
+Initialize engine version: 4.0.0f7
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0 TODO.dll]
+    Renderer: AMD Radeon(TM) R5 Graphics
+    Vendor:   ATI
+    VRAM:     1005 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Julia\Documents\Fernstudium\Einsendeaufgabe UTY11\Adventure\adventure_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  1.967 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
