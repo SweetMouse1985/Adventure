@@ -94,9 +94,9 @@ function OnGUI() {
 	//die Texte für die Schaltflächen
 	var menuStrings : String[];
 	if (Application.isWebPlayer == false)
-    	menuStrings = ["Wüste", "Wald", "Credits", "Exit"];
+    	menuStrings = ["Desert", "Forest", "Credits", "Exit"];
     else
-    	menuStrings = ["Wüste", "Wald", "Credits"];
+    	menuStrings = ["Desert", "Forest", "Credits"];
     
     //ein wenig Abstand für den inneren Rahmen
     var offset : int = 30;
@@ -115,7 +115,7 @@ function OnGUI() {
     
     //das Rechteck für die Box
     boxFrame = Rect(0,0,myX,myY);
-	GUI.Box(boxFrame,"Hauptmenü");
+	GUI.Box(boxFrame,"Main Menu");
 	
 	//das Rechteck für das SelectionGrid
 	//es hat ein wenig Abstand zur Box

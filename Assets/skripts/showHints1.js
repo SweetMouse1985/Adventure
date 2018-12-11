@@ -15,8 +15,8 @@ var myY : int = 300;
 var myBox : GUIStyle;
 
 function Start () {
-	myMessage = "Suchen Sie an der einen Oase nach 5 Münzen.\nDafür erhalten Sie an der anderen Oase einen Schlüssel,\n"+
-				"der Ihnen den Weg in den nächsten Level öffnet.";
+	myMessage = "Search for 5 coins at the first Oasis.\nFind the second Oasis and search for a Key\n"+
+				"and the box, to get access to the next level.";
 }
 
 function Update () {
@@ -46,6 +46,6 @@ function OnGUI() {
 	
 	//nach kurzer Zeit zerstören wir das Game Objekt
 	showMessage = showMessage + Time.deltaTime;
-	if (showMessage > 10) 
+	if (showMessage > 18) 
 		Destroy(gameObject);
 }

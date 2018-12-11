@@ -46,6 +46,6 @@ function OnGUI() {
 	
 	//nach kurzer Zeit zerstören wir das Game Objekt
 	showMessage = showMessage + Time.deltaTime;
-	if (showMessage > 10) 
+	if (showMessage > 18) 
 		Destroy(gameObject);
 }
