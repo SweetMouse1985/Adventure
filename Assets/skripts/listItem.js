@@ -34,7 +34,7 @@ function OnMouseDown() {
 			Destroy(gameObject);
 		}
 		else
-			myMessage = "Das Objekt kann nicht noch einmal aufgenommen werden.";
+			myMessage = "You can't pick up the item again.";
 	}
 	else
 		Debug.Log("Das andere Skript muss angegeben werden");

@@ -34,7 +34,7 @@ function Update () {
 
 	//wurde P gedrückt?
 	//dann das Menü anzeigen
-	if (Input.GetKey("p")) 
+	if (Input.GetKey("m")) 
 		showMenu = true;
 }
 
@@ -64,7 +64,7 @@ function OnGUI() {
 	//für das Menü
 	var menuSelection : int = 0;
 	//die Texte für die Schaltflächen
-	var menuStrings : String[] = ["Startbildschirm", "Anhalten", "Weiterspielen"];
+	var menuStrings : String[] = ["Main Menu", "Pause", "Resume"];
     //ein wenig Abstand für den inneren Rahmen
     var offset : int = 30;
     
@@ -74,7 +74,7 @@ function OnGUI() {
     
     	//das Rechteck für die Box
     	boxFrame = Rect(0,0,myX,myY);
-		GUI.Box(boxFrame,"Levelmenü");
+		GUI.Box(boxFrame,"Game Menu");
 	
 		//das Rechteck für die Toolbar
 		//es hat ein wenig Abstand zur Box

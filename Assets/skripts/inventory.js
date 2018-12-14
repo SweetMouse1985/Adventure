@@ -50,7 +50,7 @@ function CheckItem(condition : String, count : int) : boolean {
 		itemList[selectedIndex].ChangeCount(count * -1);
 		//wenn es das letzte war, löschen wir das Item durch Überschreiben
 		if (itemList[selectedIndex].GetCount() == 0) 
-			itemList[selectedIndex] = new ListItem(0, "leer", "leer");
+			itemList[selectedIndex] = new ListItem(0, "Empty", "Empty");
 		//die Liste neu erstellen
 		CopyList();
 	}
@@ -83,7 +83,7 @@ function FindSlot(itemName : String, itemDescription : String, maxCount : int) :
 	
 	//gibt es noch einen freien Platz
 	while (found == false && i < itemCount) {
-		if (itemList[i].GetName() == "leer") {
+		if (itemList[i].GetName() == "Empty") {
 			//dann setzen wir die neue Instanz an diese Stelle
 			itemList[i] = new ListItem(1, itemName, itemDescription);
 			found = true;
@@ -137,7 +137,7 @@ function LoadList() {
 	//sonst 10 leere Einträge erzeugen
 	else {
 		for (var count :int = 0; count < itemCount; count++)
-			itemList.Add(new ListItem(0, "leer", "leer"));
+			itemList.Add(new ListItem(0, "Empty", "Empty"));
 	}
 }
 
@@ -192,7 +192,7 @@ function OnGUI() {
 	var offset : int = 60;
 	
 	//für das Zentrieren der Schaltfläche Schließen
-	var textSize : Vector2 = GUI.skin.button.CalcSize(GUIContent("Schließen"));
+	var textSize : Vector2 = GUI.skin.button.CalcSize(GUIContent("Close Inventory"));
 	var left : int = (myX - textSize.x) / 2;
 	
 	//zum Schließen über die Esc-Taste
@@ -204,7 +204,7 @@ function OnGUI() {
 		GUI.BeginGroup(myScreen);
 		//das Rechteck für die Box
 		boxFrame = Rect(0, 0, myX, myY);
-		GUI.Box(boxFrame, "Sie tragen gerade: " + itemList[selectedIndex].GetName());
+		GUI.Box(boxFrame, "You are carrying: " + itemList[selectedIndex].GetName());
 	
 		//das Rechteck für das SelectionGrid
 		//es hat ein wenig Abstand zur Box
@@ -218,7 +218,7 @@ function OnGUI() {
 			ChangeItem(menuSelection);
 
 		//wenn die Schließen-Schaltfläche angeklickt wird, geht es weiter
-		if (GUI.Button(Rect(left, myY - 25,  textSize.x, 20), "Schließen"))
+		if (GUI.Button(Rect(left, myY - 25,  textSize.x, 20), "Close Inventory"))
 			ContinueGame(true);
 		//das Ende der Gruppe
 		GUI.EndGroup();
