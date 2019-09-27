@@ -7,7 +7,7 @@ function Start () {
 }
 
 function Update () {
-
+ Debug.Log("ich bin da");
 }
 
 function OnMouseDown() {
@@ -25,4 +25,11 @@ function OnMouseDown() {
 	otherScript.CollectLetters(GetComponent(TextMesh).text);
 	//das Objekt zerstören
 	Destroy(gameObject);
+}
+
+function OnGUI(){
+
+GUI.Label(Rect(50,100,200,20),"ich bin da");
+
+
 }

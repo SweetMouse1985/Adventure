@@ -30,7 +30,7 @@ function OnMouseDown() {
 				actionObject.SendMessage("DoAction");
 		}
 		else
-			myMessage = "Sie können das Item " + item + " hier nicht einsetzen oder die Menge reicht nicht.";
+			myMessage = "You can not use the item " + item + " or don't have the right amount.";
 	}
 	else
 		Debug.Log("Das andere Skript muss angegeben werden");

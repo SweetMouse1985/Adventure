@@ -1,7 +1,7 @@
 #pragma strict
 
 import System.IO;
-var arr: String[] = ["Baum","Ast","Blatt"];
+var arr: String[] = ["tree","nut","woods"];
 
 
 
